@@ -1,15 +1,11 @@
 name: GitHub Actions Demo
 
-on:
-  push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
+on: [ push ]
 
 jobs:
   build:
 
-    runs-on: [ self-hosted ] # The type of runner that the job will run on
+    runs-on: [ hyokeun-test ] # The type of runner that the job will run on
     container: ubuntu:18.04 # IMPORTANT. Run all the jobs inside container as guided.
 
     steps:
